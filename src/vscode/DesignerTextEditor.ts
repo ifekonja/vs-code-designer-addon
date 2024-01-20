@@ -139,6 +139,7 @@ export class DesignerTextEditor implements vscode.CustomTextEditorProvider {
 		<!DOCTYPE html>
 		<html lang="en" style="height: 100%; width: 100%">
 		<head>
+                        <base href="${webview.asWebviewUri(vscode.workspace.workspaceFolders[0].uri)}" />
 			<meta charset="UTF-8">
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
